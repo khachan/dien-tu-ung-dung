@@ -13,6 +13,7 @@
 		<mockito.version>1.10.19</mockito.version>
 		<jdk.version>1.7</jdk.version>
 		<jstl.version>1.2</jstl.version>
+		<jackson.version>2.7.5</jackson.version>
 	</properties>
 	<dependencies>
 		<!-- Junit for test -->
@@ -185,17 +186,6 @@
 			<version>${spring.security.version}</version>
 		</dependency>
 
-		<!-- Jackson -->
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-core-asl</artifactId>
-			<version>1.8.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.8.5</version>
-		</dependency>
 		<!-- Test Library -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -214,6 +204,33 @@
 			<groupId>net.sf.dozer</groupId>
 			<artifactId>dozer</artifactId>
 			<version>5.0</version>
+		</dependency>
+		<!-- Jackson JSON Mapper -->
+		<!-- Jackson -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 

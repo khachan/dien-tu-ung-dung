@@ -6,12 +6,12 @@
 <c:url var="homeUrl" value="/"/>
 <div class="container-fluid">
 	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse"
+<!-- 		<button type="button" class="navbar-toggle" data-toggle="collapse"
 			data-target="#myNavbar">
 			<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 				class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="${homeUrl}">Logo</a>
+		</button> -->
+		<a href="${homeUrl}"><img alt="Diode" src="<c:url value="/resources/core/images/logo.png"/>" height="52" width="82"> </a>
 	</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav">

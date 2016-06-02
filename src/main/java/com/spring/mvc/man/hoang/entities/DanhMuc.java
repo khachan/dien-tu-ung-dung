@@ -1,5 +1,7 @@
 package com.spring.mvc.man.hoang.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -87,5 +89,10 @@ public class DanhMuc extends MyEntity{
 	public Class<DanhMuc> getEntityClass() {
 		return DanhMuc.class;
 	}
+
+    @Override
+    public Serializable getId() {
+       return maSo;
+    }
 
 }

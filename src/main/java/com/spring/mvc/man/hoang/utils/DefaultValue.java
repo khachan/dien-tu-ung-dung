@@ -6,6 +6,7 @@ public class DefaultValue {
 	public static String VIEWS_PAGE = "views";
 	public static String ADD_PAGE = "add";
 	public static String EDIT_PAGE = "edit";
-	public static Long LIMIT = new Long(2);
-	public static Long OFSSET = new Long(0);
+	public static String SEARCH_PAGE = "/search";
+	public static Long LIMIT = 10L;
+	public static Long OFSSET = 0L;
 }
