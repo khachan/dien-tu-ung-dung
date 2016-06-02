@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="libs.jsp"%>
-<c:url var="currentUrl" value="/${entity}" />
+<c:url var="currentUrl" value="/${entityName}" />
 <div class="row">
 	<div class="col-md-6">
 		<div id="DataTables_Table_0_length" class="dataTables_length">

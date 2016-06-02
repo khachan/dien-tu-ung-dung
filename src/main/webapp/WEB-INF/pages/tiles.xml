@@ -31,4 +31,7 @@
 		<put-attribute name="title" value="View list" />
 		<put-attribute name="page" value="views" />
 	</definition>
+	
+	<definition name="json" template="/WEB-INF/pages/json.jsp">
+	</definition>
 </tiles-definitions>
