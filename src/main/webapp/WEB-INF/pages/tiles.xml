@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="masterPage" template="/WEB-INF/pages/template/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="top" value="/WEB-INF/pages/template/top.jsp" />
+		<put-attribute name="left" value="/WEB-INF/pages/template/left.jsp" />
+		<put-attribute name="right" value="/WEB-INF/pages/template/right.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+	</definition>
+	<definition name="index" extends="masterPage">
+		<put-attribute name="title" value="/WEB-INF/pages/template/title.jsp" />
+		<put-attribute name="page" value="index" />
+	</definition>
+	<definition name="add" extends="masterPage">
+		<put-attribute name="title" value="Add" />
+		<put-attribute name="page" value="add" />
+	</definition>
+	<definition name="edit" extends="masterPage">
+		<put-attribute name="title" value="Edit" />
+		<put-attribute name="page" value="edit" />
+	</definition>
+	<definition name="view" extends="masterPage">
+		<put-attribute name="title" value="View detail" />
+		<put-attribute name="page" value="view" />
+	</definition>
+	<definition name="views" extends="masterPage">
+		<put-attribute name="title" value="View list" />
+		<put-attribute name="page" value="views" />
+	</definition>
+</tiles-definitions>
