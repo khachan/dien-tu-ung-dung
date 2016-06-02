@@ -74,7 +74,7 @@
 						<c:set var="page">
 							<tiles:getAsString name="page" />
 						</c:set>
-						<jsp:include page="../${entity}/${page}.jsp" />
+						<jsp:include page="../${entityName}/${page}.jsp" />
 					</div>
 				</div>
 

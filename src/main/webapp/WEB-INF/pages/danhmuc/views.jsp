@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="../template/libs.jsp"%>
-<c:url var="currentUrl" value="/${entity}" />
+<c:url var="currentUrl" value="/${entityName}" />
 <table
 	class="table table-striped table-bordered bootstrap-datatable datatable responsive dataTable"
 	id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
@@ -66,7 +66,7 @@
 </div>
 <script>
 $('.paging').bootpag({
-	   total: ${searchResult.totalItems},
+	total: ${searchResult.totalItems},
 	   page: ${searchResult.offset/searchResult.itemsPerPage + 1},
 	   maxVisible: ${searchResult.totalItems/searchResult.itemsPerPage + 1}
 	}).on('page', function(event, num){
