@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@include file="libs.jsp"%>	
 <c:url var="currentUrl" value="/"/>
 <div class="col-sm-2 sidenav">
 	<p>

@@ -38,16 +38,17 @@
 				<td class="center ">${entity.maSo}</td>
 				<td class="center ">${entity.maSo}</td>
 				<td class="center ">${entity.maSo}</td>
-				<td class="center "><a class="btn btn-success" href="#"> <i
+				<td class="center "><a class="btn btn-success btn-xs" href="${currentUrl}/${entity.maSo}"> <i
 						class="glyphicon glyphicon-zoom-in icon-white"></i> View
-				</a> <a class="btn btn-info" href="#"> <i
+				</a> <a class="btn btn-info btn-xs" href="${currentUrl}/${-entity.maSo}"> <i
 						class="glyphicon glyphicon-edit icon-white"></i> Edit
-				</a> <form:form action='${currentUrl}/${entity.maSo}' method="delete">
-						<input type="hidden" name="id" value="${entity.maSo}">
-						<button class="btn btn-danger" type="submit">
+				</a> 
+					<form:form action='${currentUrl}/${entity.maSo}' method="delete">
+						<button class="btn btn-danger btn-xs" type="submit">
 							<i class="glyphicon glyphicon-trash icon-white"></i> Delete
 						</button>
-					</form:form></td>
+					</form:form>
+				</td>
 			</tr>
 		</c:forEach>
 	</tbody>
