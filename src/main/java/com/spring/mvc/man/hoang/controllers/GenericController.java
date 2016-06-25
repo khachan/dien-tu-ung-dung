@@ -2,8 +2,6 @@ package com.spring.mvc.man.hoang.controllers;
 
 import java.lang.reflect.ParameterizedType;
 
-import javax.annotation.PostConstruct;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
