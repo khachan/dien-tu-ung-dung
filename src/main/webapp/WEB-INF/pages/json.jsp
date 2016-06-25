@@ -14,7 +14,12 @@
 	<script type="text/javascript">
 		$(".get").click(
 				function() {
-					var searchCriteria ={offset:0,itemsPerPage:5,keyword:"Tu"}
+
+					var searchCriteria = {
+						offset : 0,
+						itemsPerPage : 5,
+						keyword : 'Tu'
+					};
 					var data = {
 						staffName : [ "mkyong1", "mkyong2" ],
 						name : "Man Hoang"

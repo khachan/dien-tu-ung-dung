@@ -27,7 +27,7 @@ public abstract class GenericController<E extends MyEntity> {
     public GenericController() {
         getEntityName();
     }
-
+    
     private ModelMap setEntityName(ModelMap model) {
         model.addAttribute("entityName", entityName);
         return model;
