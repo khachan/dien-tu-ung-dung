@@ -30,7 +30,7 @@ public class JSONController {
 		 	return "json";
 	    }
 	
-	@RequestMapping(value = "/get")
+	@RequestMapping(value = "/get", produces="application/json", headers="Accept=application/json")
 	public @ResponseBody SearchResult getShopInJSON(@RequestBody SearchCriteria searchCriteria) {
 		SearchResult searchResult = genericService.search(searchCriteria);
 		System.out.println(searchCriteria.getKeyword());

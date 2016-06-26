@@ -1,0 +1,231 @@
+#cart.slim-page {
+	margin-bottom: 20px;
+}
+.cart-empty {
+	font-size: 18px;
+	padding: 40px 0;
+}
+#cart table{
+	width: 100%;
+	position: relative;
+}
+#cart table thead tr th {
+	padding: 15px 0;
+	text-align: left;
+	font-weight: 500;
+	border-bottom: 1px solid #111111;
+}
+#cart table thead tr th.right {
+	text-align: right;
+}
+#cart table tbody tr td{
+	padding: 10px 0;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: 400;
+	border-bottom: 1px solid #111111;
+}
+#cart table tr td.right{
+	text-align: right;
+  	min-width: 75px;
+}
+#cart table tbody tr td:last-child {
+	padding-right: 15px;
+}
+#cart table tbody tr td a {
+	color: #111; 
+}
+#cart table tbody tr td.cart-item-image img{
+	height: 85px;
+	width: auto;
+}
+#cart table tbody tr td.cart-item-info p:nth-of-type(1) {
+	margin-top: 10px;
+}
+#cart table tbody tr td.cart-item-info p {
+	margin: 0;
+}
+#cart table tbody tr td.cart-item-info p.final-sale {
+	font-size: 12px;
+}
+#cart table tbody tr td.cart-item-qty p {
+	float: right;
+	padding: 1px 8px 0;
+}
+#cart table tbody tr td.cart-item-qty a  {
+	display: inline-block;
+	color: #111111;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 30px;
+	font-size: 19px;
+	border: none;
+}
+#cart table tbody tr td.cart-item-qty a:hover  {
+	color: #00aeef;
+}
+#cart table tbody tr td.cart-item-qty input {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+	outline: none;
+	padding-top: 4px;
+  	padding-left: 0;
+}
+.remove-from-cart i {
+	color: #555;
+}
+#cart table tfoot tr td {
+	padding: 20px 0;
+	font-weight: 400;
+	font-size: 17px;
+}
+#cart #update-cart {
+	-webkit-appearance: none;
+	appeareance: none;
+	color: #999;
+	background: none;
+	border: none;
+	font-size: 9px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#checkout-footer {
+	margin-bottom: 20px;
+}
+#cart #note {
+ 	height:44px;
+  	width: 100%;
+}
+#cart .green-btn {
+ 	font-weight:bold; 
+}
+.subtotal {
+	font-size: 9px;
+	width: 100%;
+}
+.subtotal span {
+	text-align: right;
+	float: right;
+}
+#cart table tbody tr td.cart-item-info .mobile-quantity p {
+	float: right;
+	padding: 1px 8px 0;
+}
+#cart table tbody tr td.cart-item-info .mobile-qty-container {
+	display: inline-table;
+}
+#cart table tbody tr td.cart-item-info .mobile-qty-container a {
+	display: inline-block;
+	color: #111111;
+	width: 30px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 26px;
+	font-size: 19px;
+	border: none;
+}
+#cart table tbody tr td.cart-item-info .mobile-qty-container input {
+	width: 26px;
+	height: 26px;
+  	padding-left: 1px;
+  	text-align: center;
+}
+
+/* Paypal Button */
+#additional-checkout-buttons {
+	margin-top: 20px;	 
+}
+#additional-checkout-buttons-label {
+	display: block;
+	margin-right: 4px;  
+}
+p.ordernote {
+	float: left;
+	margin-bottom: 20px;
+  	margin-top: -18px;
+  	width: 100%;
+}
+p.ordernote label {
+	float:left; 
+  	font-weight: 500;
+}
+.ship-calc-btn {
+  	height:50px;
+}
+.ship-calc-btn input {
+  	margin-top: 25px;
+}
+#shipping-calculator select, #shipping-calculator input {
+  	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 2px;
+}
+#address_zip {
+    background: #f6f6f6;
+    -webkit-box-shadow: inset 0 2px 0 #ddd;
+    -moz-box-shadow: inset 0 2px 0 #ddd;
+    box-shadow: inset 0 2px 0 #ddd;
+    border: 1px solid #ccc;
+    height: 32px;
+  	line-height: 24px;
+    color: #555;
+    font-family: 'BentonSans';
+    font-style: italic;
+    font-size: 14px;
+}
+#shipping-calculator .pull-left {
+	margin: 0 10px 10px 0;
+}
+#shipping-calculator {
+  	margin: 40px 0 20px 0;
+}
+#shipping-calculator h3 {
+	font-weight: 700;
+}
+#shipping-rates li {
+  	list-style-type: disc;
+	margin: 5px 0 5px 40px;
+}
+#shipping-rates-feedback {
+  	font-weight:500;
+}
+#address_province {
+	height: 32px;
+}
+@media ( max-width: 767px) {
+  	#submit-cart {
+      	margin-top: 15px;
+      	width: 100%;
+    }
+  	#checkout-footer {
+    	margin-bottom: 30px; 
+    }
+  	#checkout-footer .maker-btn {
+    	display: block; 
+    }
+}
+@media ( max-width: 479px) { 
+  	#submit-cart {
+      	margin-top: 15px;
+      	width: 100%;
+    }  
+}
+.cart-shipping-msg {
+    text-align: right;
+    color: #00aeef;
+    font-size: 16px; 
+}
+#cart table tfoot .cart-table-padding td {
+ 	padding: 0; 
+}
+#cart .items {
+  	margin-bottom:20px;
+} 

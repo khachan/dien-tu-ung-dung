@@ -1,0 +1,71 @@
+@media print {
+  #header-top, #mobile-header-search, #mobile-menu-toggle, #mobile-account-button, #mobile-cart-button, #mobile-header-menu, header > .container, footer, .ship-calc-btn, .jbar {
+    display: none!important;
+  }
+  #mobile-home-button {
+    display: block!important;
+    margin-left:180px;
+  }
+  a {
+    text-decoration: none;
+  }
+  a::after { 
+  display:none;
+  }
+  /* Cart */
+  .ship-calc-btn, .cartModify, .remove-from-cart {
+    display: none!important;
+  }
+  input .quantity {
+    border:none!important;
+  }
+  /* Product page */
+  #recommended-products, #product-add, #add-to-wishlist, .social-buttons {
+    display: none!important;
+  }
+  #product-tab-content {
+    margin-left:0px;
+  }
+  #product, #collection {
+    margin-top: -40px; 
+  }
+  #product-right {
+    display:inline!important;
+    float:left!important;
+    margin-bottom: 0px;
+    width:70%;
+  }
+  #product-display {
+    display: inline!important;
+    float: left!important;
+    width: 70%!important;
+  }
+  .product-image img {
+    max-width: 100px!important;
+    max-height: 100px!important;
+  }
+  #product-images {
+    width: 30%!important;
+    float: right!important;
+    margin-top: 10px;
+  }
+  .product-image {
+    width: 100px!important;
+  height: 100px!important;
+  }
+  .scrolling-image-container-inner {
+    width: inherit!important;
+  }
+  #product-quantity {
+  float: left!important;
+  }
+  .collapse {
+  display: initial!important;
+  }
+  #product-tab-content, .product-image {
+    border: none!important; 
+  }
+  #mobile-header {
+  margin-top: 0!important;
+  }
+}

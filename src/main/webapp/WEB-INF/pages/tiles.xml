@@ -30,8 +30,6 @@
 		<put-attribute name="title" value="View list" />
 		<put-attribute name="page" value="views" />
 	</definition>
-	<definition name="json" extends="masterPage">
-		<put-attribute name="title" value="JSON" />
-		<put-attribute name="page" value="json" />
+	<definition name="json" template="/WEB-INF/pages/json.jsp">
 	</definition>
 </tiles-definitions>
