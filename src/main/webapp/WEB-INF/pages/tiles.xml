@@ -6,7 +6,6 @@
 	<definition name="masterPage" template="/WEB-INF/pages/template/layout.jsp">
 		<put-attribute name="title" value="" />
 		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
-		<put-attribute name="top" value="/WEB-INF/pages/template/top.jsp" />
 		<put-attribute name="left" value="/WEB-INF/pages/template/left.jsp" />
 		<put-attribute name="right" value="/WEB-INF/pages/template/right.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
@@ -31,7 +30,8 @@
 		<put-attribute name="title" value="View list" />
 		<put-attribute name="page" value="views" />
 	</definition>
-	
-	<definition name="json" template="/WEB-INF/pages/json.jsp">
+	<definition name="json" extends="masterPage">
+		<put-attribute name="title" value="JSON" />
+		<put-attribute name="page" value="json" />
 	</definition>
 </tiles-definitions>

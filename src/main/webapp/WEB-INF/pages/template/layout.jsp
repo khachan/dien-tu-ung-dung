@@ -69,8 +69,6 @@
 				<div class="box-content">
 					<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper"
 						role="grid">
-						
-						<tiles:insertAttribute name="top" />
 						<c:set var="page">
 							<tiles:getAsString name="page" />
 						</c:set>
