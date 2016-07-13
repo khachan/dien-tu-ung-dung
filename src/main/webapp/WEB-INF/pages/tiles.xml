@@ -32,4 +32,6 @@
 	</definition>
 	<definition name="json" template="/WEB-INF/pages/json.jsp">
 	</definition>
+	<definition name="cook" template="/WEB-INF/pages/cook.jsp">
+	</definition>
 </tiles-definitions>

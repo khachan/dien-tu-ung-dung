@@ -4,14 +4,14 @@
 <c:url var="currentUrl" value="/"/>
 <div class="col-sm-2 sidenav">
 	<p>
-		<a href="${currentUrl}danhmuc">Danh Mục</a>
+		<a href="<c:out value="${currentUrl}danhmuc"/>">Danh Mục</a>
 	<p>
-		<a href="${currentUrl}linhkien">Linh Kiện</a>
+		<a href="<c:out value="${currentUrl}linhkien"/>">Linh Kiện</a>
 	</p>
 	<p>
-		<a href="${currentUrl}dungcu">Dụng Cụ</a>
+		<a href="<c:out value="${currentUrl}dungcu"/>">Dụng Cụ</a>
 	</p>
 	<p>
-		<a href="${currentUrl}sanpham">Sản Phẩm</a>
+		<a href="<c:out value="${currentUrl}sanpham"/>">Sản Phẩm</a>
 	</p>
 </div>

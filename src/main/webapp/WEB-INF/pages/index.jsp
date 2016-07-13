@@ -5,15 +5,21 @@
 <c:url var="currentUrl" value="/"/>
 <h1>
 	<p>
-		<a href="${currentUrl}danhmuc">Danh Mục</a>
+		<a href="<c:out value="${currentUrl}danhmuc"/>">Danh Mục</a>
 	<p>
-		<a href="${currentUrl}linhkien">Linh Kiện</a>
+		<a href="<c:out value="${currentUrl}linhkien"/>">Linh Kiện</a>
 	</p>
 	<p>
-		<a href="${currentUrl}dungcu">Dụng Cụ</a>
+		<a href="<c:out value="${currentUrl}dungcu"/>">Dụng Cụ</a>
 	</p>
 	<p>
-		<a href="${currentUrl}sanpham">Sản Phẩm</a>
+		<a href="<c:out value="${currentUrl}sanpham"/>">Sản Phẩm</a>
+	</p>
+	<p>
+		<a href="<c:out value="${currentUrl}/json/cook"/>">COOK</a>
+	</p>
+	<p>
+		<a href="<c:out value="${currentUrl}/json/json"/>">JSON</a>
 	</p>
 </h1>
 <h1></h1>

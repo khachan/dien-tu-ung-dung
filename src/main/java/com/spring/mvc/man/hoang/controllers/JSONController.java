@@ -25,19 +25,22 @@ public class JSONController {
 	@Autowired
 	private GenericService<DanhMuc> genericService;
 
-	 @RequestMapping(value = {"", "/"})
-	    public String views() {
-		 	return "json";
-	    }
-	
-	@RequestMapping(value = "/get", produces="application/json", headers="Accept=application/json")
+	@RequestMapping(value = { "", "/cook" })
+	public String cook() {
+		return "cook";
+	}
+
+	@RequestMapping(value = { "", "/json" })
+	public String views() {
+		return "json";
+	}
+
+	@RequestMapping(value = "/get", produces = "application/json", headers = "Accept=application/json")
 	public @ResponseBody SearchResult getShopInJSON(@RequestBody SearchCriteria searchCriteria) {
 		SearchResult searchResult = genericService.search(searchCriteria);
 		System.out.println(searchCriteria.getKeyword());
 		return searchResult;
 
 	}
-	
-	
 
 }
